@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        OpportunityX — Student Intelligence
+    </title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     APP SHELL
+====================================================== -->
+
+<div class="app-shell">
+
+
+    <!-- =================================================
+         SIDEBAR
+    ================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-symbol">
+                ✦
+            </div>
+
+            <div class="brand-text">
+
+                <strong>
+                    OpportunityX
+                </strong>
+
+                <span>
+                    STUDENT INTELLIGENCE
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-label">
+            WORKSPACE
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <button
+                id="dashboardNav"
+                class="side-nav-button active">
+
+                <span>▦</span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </button>
+
+
+            <button
+                id="opportunitiesNav"
+                class="side-nav-button">
+
+                <span>◈</span>
+
+                <span>
+                    Opportunities
+                </span>
+
+            </button>
+
+
+            <button
+                id="savedNav"
+                class="side-nav-button">
+
+                <span>♡</span>
+
+                <span>
+                    Saved
+                </span>
+
+                <b id="savedCount">
+                    0
+                </b>
+
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-status">
+
+                <span class="status-dot"></span>
+
+                <div>
+
+                    <strong>
+                        Radar Online
+                    </strong>
+
+                    <small>
+                        Intelligence engine active
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="profileNav"
+                class="profile-button">
+
+                <span class="profile-avatar">
+                    ◉
+                </span>
+
+                <span>
+                    My Profile
+                </span>
+
+                <span class="profile-arrow">
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =================================================
+         MAIN AREA
+    ================================================== -->
+
+    <div class="main-area">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="breadcrumb">
+
+                <span>
+                    OPPORTUNITYX
+                </span>
+
+                <i>/</i>
+
+                <strong id="currentPage">
+                    Dashboard
+                </strong>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <span class="system-status">
+
+                    <span class="status-dot"></span>
+
+                    SYSTEM ACTIVE
+
+                </span>
+
+                <span class="topbar-date">
+                    STUDENT COMMAND CENTER
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <main class="content-area">
+
+
+            <!-- =================================================
+                 DASHBOARD
+            ================================================== -->
+
+            <section
+                id="dashboardView"
+                class="page-view">
+
+
+                <!-- HERO -->
+
+                <section class="hero">
+
+                    <div class="hero-copy">
+
+                        <div class="eyebrow">
+
+                            <span class="status-dot"></span>
+
+                            YOUR OPPORTUNITY RADAR
+
+                        </div>
+
+
+                        <h1>
+
+                            Discover what's
+
+                            <span>
+                                next for you.
+                            </span>
+
+                        </h1>
+
+
+                        <p>
+
+                            OpportunityX brings internships,
+                            hackathons, scholarships, courses
+                            and career opportunities into one
+                            intelligent student workspace.
+
+                        </p>
+
+
+                        <div class="hero-actions">
+
+                            <button
+                                id="viewAllButton"
+                                class="button button-primary">
+
+                                Explore Opportunities
+
+                                <span>
+                                    →
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                id="completeProfileButton"
+                                class="button button-secondary">
+
+                                Complete My Profile
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="hero-process">
+
+                            <div>
+
+                                <strong>
+                                    01
+                                </strong>
+
+                                <span>
+                                    Discover
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    02
+                                </strong>
+
+                                <span>
+                                    Match
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    03
+                                </strong>
+
+                                <span>
+                                    Act
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- HERO VISUAL -->
+
+                    <div class="hero-visual">
+
+                        <div class="visual-grid"></div>
+
+                        <div class="orbit orbit-large"></div>
+
+                        <div class="orbit orbit-small"></div>
+
+
+                        <div class="hero-core">
+
+                            <span>
+                                ✦
+                            </span>
+
+                            <small>
+                                OPPORTUNITY
+                            </small>
+
+                            <strong>
+                                INTELLIGENCE
+                            </strong>
+
+                        </div>
+
+
+                        <div class="visual-node node-ai">
+                            AI
+                        </div>
+
+                        <div class="visual-node node-dev">
+                            DEV
+                        </div>
+
+                        <div class="visual-node node-data">
+                            DATA
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- READINESS -->
+
+                <section class="readiness-card">
+
+                    <div class="readiness-info">
+
+                        <div class="eyebrow">
+                            CAREER READINESS
+                        </div>
+
+                        <div
+                            id="readinessScore"
+                            class="readiness-score">
+
+                            0%
+
+                        </div>
+
+                        <p>
+                            Complete your profile to unlock
+                            stronger opportunity matches.
+                        </p>
+
+                    </div>
+
+
+                    <div class="readiness-progress">
+
+                        <div class="progress-header">
+
+                            <span>
+                                PROFILE COMPLETION
+                            </span>
+
+                            <strong>
+                                LIVE
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-track">
+
+                            <div
+                                id="readinessProgress"
+                                class="progress-fill">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- SECTION HEADER -->
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            AI-POWERED INSIGHT
+                        </span>
+
+                        <h2>
+                            Your Opportunity Radar
+                        </h2>
+
+                        <p>
+                            A live snapshot of your current
+                            opportunity potential.
+                        </p>
+
+                    </div>
+
+
+                    <div class="live-pill">
+
+                        <span class="status-dot"></span>
+
+                        LIVE
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RADAR -->
+
+                <section class="radar-layout">
+
+
+                    <div class="radar-main">
+
+                        <div class="radar-graphic">
+
+                            <div class="radar-grid-lines"></div>
+
+                            <div class="radar-ring ring-1"></div>
+                            <div class="radar-ring ring-2"></div>
+                            <div class="radar-ring ring-3"></div>
+
+                            <div class="radar-sweep"></div>
+
+
+                            <div class="radar-center">
+
+                                <strong id="radarScore">
+                                    0%
+                                </strong>
+
+                                <span>
+                                    READY
+                                </span>
+
+                            </div>
+
+
+                            <div class="radar-blip blip-1"></div>
+                            <div class="radar-blip blip-2"></div>
+                            <div class="radar-blip blip-3"></div>
+
+                        </div>
+
+
+                        <div class="radar-copy">
+
+                            <span class="insight-label">
+                                ✦ OPPORTUNITYX INSIGHT
+                            </span>
+
+                            <h3>
+                                Your opportunity radar
+                                is active.
+                            </h3>
+
+                            <p>
+                                Your profile is continuously
+                                compared with the available
+                                opportunity universe.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="radar-stats">
+
+                        <div class="radar-stat">
+
+                            <span class="radar-stat-icon">
+                                ◈
+                            </span>
+
+                            <div>
+
+                                <strong id="radarMatches">
+                                    0
+                                </strong>
+
+                                <span>
+                                    Strong Matches
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="radar-stat">
+
+                            <span class="radar-stat-icon">
+                                ◉
+                            </span>
+
+                            <div>
+
+                                <strong id="radarClosing">
+                                    0
+                                </strong>
+
+                                <span>
+                                    Closing Soon
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="radar-stat">
+
+                            <span class="radar-stat-icon">
+                                +
+                            </span>
+
+                            <div>
+
+                                <strong id="radarUnlock">
+                                    0
+                                </strong>
+
+                                <span>
+                                    Potential Unlocks
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- STATS -->
+
+                <section class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">
+                            ◈
+                        </span>
+
+                        <strong id="matchedCount">
+                            0
+                        </strong>
+
+                        <span>
+                            Matched Opportunities
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">
+                            ◉
+                        </span>
+
+                        <strong id="closingCount">
+                            0
+                        </strong>
+
+                        <span>
+                            Closing Soon
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">
+                            ♡
+                        </span>
+
+                        <strong id="savedStat">
+                            0
+                        </strong>
+
+                        <span>
+                            Saved Opportunities
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">
+                            ✦
+                        </span>
+
+                        <strong id="skillsCount">
+                            0
+                        </strong>
+
+                        <span>
+                            Skills in Profile
+                        </span>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- RECOMMENDATIONS -->
+
+                <section class="content-section">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                PERSONALIZED FOR YOU
+                            </span>
+
+                            <h2>
+                                Recommended Opportunities
+                            </h2>
+
+                            <p>
+                                Ranked according to your profile
+                                and current interests.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            id="recommendationsViewAll"
+                            class="text-button">
+
+                            View all →
+
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        id="recommendationsContainer"
+                        class="opportunity-grid">
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- OPPORTUNITY DNA -->
+
+                <section class="dna-section">
+
+                    <div class="dna-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                PROFILE INTELLIGENCE
+                            </span>
+
+                            <h2>
+                                Your Opportunity DNA
+                            </h2>
+
+                            <p>
+                                Understand what your profile
+                                currently unlocks.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dna-grid">
+
+                        <div class="dna-card">
+
+                            <span>
+                                PRIMARY TRACK
+                            </span>
+
+                            <strong id="dnaInterest">
+                                Not set
+                            </strong>
+
+                            <p>
+                                Based on your selected
+                                career interest.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dna-card">
+
+                            <span>
+                                SKILL SIGNAL
+                            </span>
+
+                            <strong id="dnaSkills">
+                                0 skills
+                            </strong>
+
+                            <p>
+                                Skills used to calculate
+                                your opportunity matches.
+                            </p>
+
+                        </div>
+
+
+                        <div class="dna-card">
+
+                            <span>
+                                OPPORTUNITY ACCESS
+                            </span>
+
+                            <strong id="dnaAccess">
+                                0%
+                            </strong>
+
+                            <p>
+                                Your current profile
+                                readiness level.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- WHAT IF -->
+
+                <section class="whatif-section">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            WHAT-IF SIMULATOR
+                        </span>
+
+                        <h2>
+                            What could unlock your next
+                            opportunity?
+                        </h2>
+
+                        <p>
+                            Add a skill below and see how your
+                            opportunity access could change.
+                        </p>
+
+                    </div>
+
+
+                    <div class="whatif-controls">
+
+                        <input
+                            id="whatIfSkill"
+                            type="text"
+                            placeholder="Try: Python, AWS, SQL...">
+
+                        <button
+                            id="whatIfButton"
+                            class="button button-primary">
+
+                            Simulate →
+
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        id="whatIfResult"
+                        class="whatif-result">
+
+                        Enter a skill to simulate
+                        your opportunity unlock.
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- PROFILE -->
+
+                <section
+                    id="profileSection"
+                    class="profile-section">
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                YOUR PROFILE
+                            </span>
+
+                            <h2>
+                                Build your opportunity profile
+                            </h2>
+
+                            <p>
+                                Your profile powers the
+                                OpportunityX matching engine.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-card">
+
+                        <form id="profileForm">
+
+                            <div class="form-grid">
+
+
+                                <div class="form-field">
+
+                                    <label>
+                                        Your Name
+                                    </label>
+
+                                    <input
+                                        id="studentName"
+                                        type="text"
+                                        placeholder="Enter your name">
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label>
+                                        Branch
+                                    </label>
+
+                                    <select
+                                        id="studentBranch">
+
+                                        <option value="">
+                                            Select your branch
+                                        </option>
+
+                                        <option value="CSE">
+                                            CSE
+                                        </option>
+
+                                        <option value="IT">
+                                            IT
+                                        </option>
+
+                                        <option value="ENTC">
+                                            ENTC
+                                        </option>
+
+                                        <option value="AI-ML">
+                                            AI-ML
+                                        </option>
+
+                                        <option value="Data Science">
+                                            Data Science
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label>
+                                        CGPA
+                                    </label>
+
+                                    <input
+                                        id="studentCGPA"
+                                        type="number"
+                                        min="0"
+                                        max="10"
+                                        step="0.01"
+                                        placeholder="8.2">
+
+                                </div>
+
+
+                                <div class="form-field">
+
+                                    <label>
+                                        Career Interest
+                                    </label>
+
+                                    <select
+                                        id="studentInterest">
+
+                                        <option value="">
+                                            Select your interest
+                                        </option>
+
+                                        <option value="Software Development">
+                                            Software Development
+                                        </option>
+
+                                        <option value="Data Science">
+                                            Data Science
+                                        </option>
+
+                                        <option value="AI">
+                                            AI / Machine Learning
+                                        </option>
+
+                                        <option value="Cloud">
+                                            Cloud / DevOps
+                                        </option>
+
+                                        <option value="Cybersecurity">
+                                            Cybersecurity
+                                        </option>
+
+                                        <option value="UI/UX">
+                                            UI/UX Design
+                                        </option>
+
+                                        <option value="Product Management">
+                                            Product Management
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-field form-full">
+
+                                    <label>
+                                        Skills
+                                    </label>
+
+                                    <input
+                                        id="studentSkills"
+                                        type="text"
+                                        placeholder="Java, SQL, Python, Git">
+
+                                    <small>
+                                        Separate skills with commas.
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-footer">
+
+                                <span>
+                                    ✦ Profile data is stored
+                                    locally in your browser.
+                                </span>
+
+                                <button
+                                    type="submit"
+                                    class="button button-primary">
+
+                                    Save My Profile →
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 OPPORTUNITIES PAGE
+            ================================================== -->
+
+            <section
+                id="opportunitiesView"
+                class="page-view"
+                style="display:none;">
+
+                <div class="page-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            EXPLORE
+                        </span>
+
+                        <h1>
+                            Opportunity Universe
+                        </h1>
+
+                        <p>
+                            Discover internships, hackathons,
+                            scholarships, courses and more.
+                        </p>
+
+                    </div>
+
+                    <div class="live-pill">
+                        <span class="status-dot"></span>
+                        LIVE DISCOVERY
+                    </div>
+
+                </div>
+
+
+                <div class="filter-panel">
+
+                    <div class="search-box">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            id="searchInput"
+                            type="text"
+                            placeholder="Search opportunities...">
+
+                    </div>
+
+
+                    <select id="categoryFilter">
+
+                        <option value="">
+                            All Categories
+                        </option>
+
+                        <option value="Internship">
+                            Internship
+                        </option>
+
+                        <option value="Hackathon">
+                            Hackathon
+                        </option>
+
+                        <option value="Scholarship">
+                            Scholarship
+                        </option>
+
+                        <option value="Certification">
+                            Certification
+                        </option>
+
+                        <option value="Competition">
+                            Competition
+                        </option>
+
+                        <option value="Workshop">
+                            Workshop
+                        </option>
+
+                        <option value="Course">
+                            Course
+                        </option>
+
+                    </select>
+
+
+                    <select id="modeFilter">
+
+                        <option value="">
+                            All Modes
+                        </option>
+
+                        <option value="Online">
+                            Online
+                        </option>
+
+                        <option value="Offline">
+                            Offline
+                        </option>
+
+                        <option value="Remote">
+                            Remote
+                        </option>
+
+                        <option value="Hybrid">
+                            Hybrid
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div
+                    id="allOpportunitiesContainer"
+                    class="opportunity-grid">
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SAVED PAGE
+            ================================================== -->
+
+            <section
+                id="savedView"
+                class="page-view"
+                style="display:none;">
+
+                <div class="page-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            YOUR COLLECTION
+                        </span>
+
+                        <h1>
+                            Saved Opportunities
+                        </h1>
+
+                        <p>
+                            Your personal opportunity shortlist.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="savedContainer"
+                    class="opportunity-grid">
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     MODAL
+====================================================== -->
+
+<div
+    id="opportunityModal"
+    class="modal">
+
+    <div
+        id="modalContent"
+        class="modal-card">
+
+        <button
+            id="modalClose"
+            class="modal-close">
+
+            ×
+
+        </button>
+
+
+        <div id="modalBody">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- TOAST -->
+
+<div id="toast">
+
+    <span id="toastMessage">
+        Saved successfully.
+    </span>
+
+</div>
+
+
+
+<script src="{{ url_for('static', filename='script.js') }}">
+</script>
+
+</body>
+
+</html>
